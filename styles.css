@@ -1,0 +1,608 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 {
+  font-size: 5vmin;
+  font-family: 'Squada One', cursive;
+}
+
+p {
+  font-size: 2vmin;
+  font-family: 'Inconsolata', monospace;
+}
+
+/* .heroGrid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(8, 1fr);
+} */
+.fullWidth {
+  grid-column-end: span 9;
+}
+
+.heroImage {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120vh;
+  height: 100vh;
+  background-image: url("Building6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  /* grid-row-end: span 10; */
+  padding-bottom: 120vh;
+}
+
+/* this has ridiculous paddings in order to show full image */
+.columnWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.columnWrapper h1 {
+  font-size: 6vmin;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: flex-start;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: flex-end;
+}
+
+/* .column h1 + h1 {
+  margin-top: 20vmin;
+}
+
+.column2 h1 + h1 {
+  margin-top: 20vmin;
+} */
+.start7 {
+  grid-row-start: 7;
+}
+
+body .mainGrid {
+  padding: 0 6vmin 0 6vmin;
+  overflow: hidden;
+  color: white;
+}
+
+.mainGrid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 3vmin;
+  background-color: black;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 330vh 5vmin 0 5vmin;
+}
+
+/* .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1vmin 2vmin 1vmin 2vmin;
+  background-color: pink;
+} */
+.linkBox {
+  height: 8vmin;
+  width: 20vmin;
+  text-align: center;
+}
+
+/* this stops the god damn stretching of the page when hovering */
+.hovertext .hover {
+  display: none;
+  /* this hides .hover from being displayed normally */
+}
+
+.hovertext:hover .normal {
+  display: none;
+  /* this hides .normal upon hovering */
+}
+
+.hovertext .hover2 {
+  display: none;
+}
+
+.hovertext .hover3 {
+  display: none;
+}
+
+.hovertext:hover .hover {
+  display: inline;
+  font-family: 'Do Hyeon', sans-serif;
+
+}
+
+.hovertext:hover .hover2 {
+  display: inline;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.7vmin;
+  /* this displays .hover upon hovering */
+}
+
+.hovertext:hover .hover3 {
+  display: inline;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 3.5vmin;
+}
+
+/* learned how to use hover from this site: http://cwestblog.com/2013/02/06/css-change-content-on-hover/ */
+a {
+  text-decoration: none;
+  font-size: 5vmin;
+  color: #fff;
+  font-family: 'Squada One', cursive;
+}
+
+/*
+.columnCenter {
+  grid-column-start: 2;
+  grid-column-end: -2;
+} */
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  background-image: url("LogoWide5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 35vmin;
+  margin-bottom: 20vmin;
+}
+
+.drink {
+  display: flex;
+  justify-content: center;
+  /* height: 796px; */
+  width: 100%;
+  background-image: url("Drink8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* .window {
+  display: flex;
+  justify-content: center;
+  background-image: url("Window5.png");
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+} */
+/* .drinkTxt {
+  display: flex;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  padding-right: 12vmin;
+} */
+.breaker {
+  border-bottom: 0.5vmin solid white;
+  margin-bottom: 5vmin;
+}
+
+.item3x4 {
+  grid-column-end: span 3;
+  grid-row-end: span 4;
+}
+
+.item2x2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.item2x4 {
+  grid-column-end: span 2;
+  grid-row-end: span 4;
+}
+
+.item4x4 {
+  grid-column-end: span 4;
+  grid-row-end: span 4;
+}
+
+.padding1 {
+  padding-top: 16vmin;
+}
+
+.width {
+  width: 100%;
+}
+
+.textImage {
+
+}
+
+.text1 {
+  grid-column-start: 2;
+  grid-row-end: span 4;
+  background-image: url("text1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.textAlign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start1 {
+  grid-column-start: 1;
+}
+
+.start2 {
+  grid-column-start: 2;
+}
+
+.rstart2 {
+  grid-row-start: 2;
+}
+
+.rstart3 {
+  grid-row-start: 3;
+}
+
+.rstart4 {
+  grid-row-start: 4;
+}
+
+.start3 {
+  grid-column-start: 3;
+}
+
+.start4 {
+  grid-column-start: 4;
+}
+
+.start6 {
+  grid-column-start: 6;
+}
+
+.start7 {
+  grid-column-start: 7;
+}
+
+.start8 {
+  grid-column-start: 8;
+}
+
+.end-2 {
+  grid-column-end: -2;
+}
+
+.span2 {
+  grid-column-end: span 2;
+}
+
+.span3 {
+  grid-column-end: span 3;
+}
+
+.span4 {
+  grid-column-end: span 4;
+}
+
+.image1{
+  background-image: url("Image1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vmin;
+}
+.image2 {
+  background-image: url("image2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vmin;
+}
+
+.textBox {
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-column-end: span 2;
+}
+
+.textBox2 {
+  grid-row-start: 4;
+  grid-column-start: 5;
+  grid-column-end: span 1;
+}
+
+.textBox3 {
+  grid-row-start: 5;
+  grid-column-start: 6;
+  grid-column-end: span 1;
+}
+
+
+.imageB {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: span 5;
+}
+
+.imageC {
+  grid-row-start: 6;
+  grid-column-start: 3;
+  grid-column-end: span 5;
+  padding-bottom: 10vmin;
+}
+
+/* ***************************************************** */
+.menuBar2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vmin 5vmin 0 5vmin;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin: 2vmin 5vmin 0 5vmin;
+  padding: 8vmin 0 8vmin 0;
+  background-color: black;
+}
+
+.menuGrid h2 {
+  font-size: 4vmin;
+  font-family: 'Squada One', cursive;
+  color: white;
+}
+
+.menuGrid p {
+  line-height: 4vmin;
+}
+
+.menuGrid2 p {
+  line-height: 4vmin;
+}
+.Drink1 {
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  width: 90%;
+  /* grid-row-end: span 8; */
+  /* background-image: url("Drink4.jpg");
+  background-repeat: no-repeat;
+   */
+}
+
+.menu1 {
+  padding-top: 5vmin;
+  grid-column-start: 6;
+}
+
+.menu2 {
+  padding-top: 5vmin;
+  grid-column-start: 7;
+  grid-column-end: span 2;
+}
+
+.menuBox {
+  display: flex;
+  align-content: center;
+  height: 7vmin;
+  width: 20vmin;
+  padding-bottom: 4vmin;
+}
+
+.menuBox2 {
+  display: flex;
+  align-content: center;
+  height: 7vmin;
+  width: 30vmin;
+  padding-bottom: 4vmin;
+}
+
+.footer {
+  display: flex;
+  padding-top: 9vmin;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 8vmin;
+}
+
+
+.footer2 {
+  display: flex;
+  margin: 2vmin 5vmin 0 5vmin;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 8vmin;
+}
+
+/* ******************************************** */
+
+.street1 {
+  grid-column-start: 4;
+  grid-row-end: span 4;
+  grid-column-end: span 3;
+}
+
+.streetImg {
+  background-image: url("street1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vmin;
+}
+
+.about1 {
+  padding-top: 9vmin;
+  grid-column-start: 3;
+  text-align: right;
+}
+
+.about2 {
+  padding-top: 9vmin;
+  grid-column-start: 7;
+}
+/* ******************************************** */
+
+.menuGrid2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 10vmin 5vmin 0 5vmin;
+  padding: 8vmin 0 8vmin 0;
+}
+
+
+.contact {
+  grid-column-start: 4;
+
+}
+
+.contactImg {
+  background-image: url("Contact.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vmin;
+}
+
+.cBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-start: 4;
+}
+
+.footer3 {
+  display: flex;
+  margin: 14vmin 5vmin 0 5vmin;
+  justify-content: center;
+  align-items: center;
+  height: 8vmin;
+}
+
+/* ******************************************** */
+
+@media screen and (max-width: 600px) {
+
+  .menuBar2 a {
+    font-size: 15vmin;
+  }
+
+  .menuBar2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linkBox {
+    height: 18vmin;
+    width: 50vmin;
+    text-align: center;
+  }
+
+  .menuGrid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 4vmin 5vmin 0 5vmin;
+    padding: 8vmin 0 8vmin 0;
+    background-color: black;
+  }
+
+  .Drink1 {
+    grid-column-start: 2;
+    grid-column-end: span 9;
+    width: 90%;
+  }
+
+  .menu1 {
+    padding-top: 5vmin;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: span 7;
+  }
+
+  .menu2 {
+    padding-top: 5vmin;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: span 7;
+  }
+
+  .menuGrid h2 {
+    font-size: 10vmin;
+  }
+
+  p {
+    font-size: 5vmin;
+  }
+
+  .menuBox {
+    display: flex;
+    align-content: center;
+    height: 12vmin;
+    width: 60vmin;
+    padding-bottom: 10vmin;
+  }
+
+  .menuBox2 {
+    display: flex;
+    align-content: center;
+    height: 12vmin;
+    width: 60vmin;
+    padding-bottom: 10vmin;
+  }
+
+  .menuGrid p {
+    line-height: 12vmin;
+  }
+
+  .hovertext:hover .hover2 {
+    display: inline;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4vmin;
+  }
+
+  .hovertext:hover .hover3 {
+    display: inline;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8.5vmin;
+  }
+
+  .footer2 {
+    display: flex;
+    margin: 2vmin 5vmin 0 5vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 8vmin;
+  }
+
+  .footer2 p {
+    font-size: 3vmin;
+  }
+
+}
